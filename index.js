@@ -32,7 +32,7 @@ app.get("/agents", async (req, res) => {
 app.post("/agent", async (req, res) => {
   console.log("Adding an agent");
 
-    // Insomnia POST Test
+  // Insomnia POST Test
   //   {
   // 	"agentName": "test",
   // 	"agentRole": "test",
