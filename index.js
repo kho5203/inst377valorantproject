@@ -32,6 +32,22 @@ app.get("/agents", async (req, res) => {
 app.post("/agent", async (req, res) => {
   console.log("Adding an agent");
 
+    // Insomnia POST Test
+  //   {
+  // 	"agentName": "test",
+  // 	"agentRole": "test",
+  // 	"agentIcon": "test",
+  // 	"agentDescription": "test",
+  // 	"ability1name": "test",
+  // 	"ability1description": "test",
+  // 	"ability2name": "test",
+  // 	"ability2description": "test",
+  // 	"grenade": "test",
+  // 	"grenadedescription": "test",
+  // 	"ultimate": "test",
+  // 	"ultimatedescription": "test"
+  // }
+
   console.log("Request: ", req.body);
   const agentName = req.body.agentName;
   const agentRole = req.body.agentRole;
