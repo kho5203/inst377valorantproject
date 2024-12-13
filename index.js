@@ -12,7 +12,7 @@ supabaseAPIKey =
 const supabase = SupabaseClient.createClient(supabaseUrl, supabaseAPIKey);
 
 app.get("/", (req, res) => {
-  res.sendFile("public/home.html", { root: __dirname });
+  res.sendFile("public/workshop.html", { root: __dirname });
 });
 
 app.get("/agents", async (req, res) => {
