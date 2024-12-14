@@ -112,9 +112,7 @@ function createAbilitySlides(data) {
                       <img src="${ability.agent_icon}>
                       <h2>${ability.agent_name}</h2>
                       <p> <b>Agent Role:</b> ${ability.agent_role}</p>
-                      <p> <b>Agent Description:</b> ${
-                        ability.agent_description || "No description available."
-                      }</p>
+                      <p> <b>Agent Description:</b> ${ability.agent_description}</p>
                       <h3> Agent Abilities</h3>
                       <h4> ${ability.ability_1_name}</h4>
                       <p> ${ability.ability_1_description}</p>
