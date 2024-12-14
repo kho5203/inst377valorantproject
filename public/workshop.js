@@ -50,8 +50,6 @@ async function loadNewAgent() {
   // Show agent details
   container.innerHTML = `
   <h2>Here are all of the Agents you created!</h2>
-   <img src="${data.agent_icon || ""}">
-   <h2>${data.agent_name}</h2>
    <div class="swiper-container">
        <div class="swiper-wrapper">
            ${createAbilitySlides(data)}
@@ -106,6 +104,7 @@ function createAbilitySlides(data) {
       newAgents.push(data[i]);
     }
   }
+
   return newAgents
     .map((ability) => {
       return `
@@ -114,8 +113,8 @@ function createAbilitySlides(data) {
         ability.agent_name || "Unknown Ability"
       }">
                       <h2>${ability.agent_name || "Unknown Ability"}</h2>
-                      <p> Agent Role: ${ability.agent_role}</p>
-                      <p>Agent Description ${
+                      <p> <b>Agent Role:</b> ${ability.agent_role}</p>
+                      <p> <b>Agent Description:</b> ${
                         ability.agent_description || "No description available."
                       }</p>
                       <h3> Agent Abilities</h3>
