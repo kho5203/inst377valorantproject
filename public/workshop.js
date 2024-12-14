@@ -10,15 +10,23 @@ async function createAgent() {
       agentDescription: `${document.getElementById("agentDescription").value}`,
       agentRole: `${document.getElementById("agentRole").value}`,
 
-      ability1Name: `${document.getElementById("ability1Name").value}`,
-      ability1Des: `${document.getElementById("ability1Des").value}`,
-      ability2Name: `${document.getElementById("ability2Name").value}`,
-      ability2Des: `${document.getElementById("ability2Des").value}`,
+      ability1name: `${document.getElementById("ability1name").value}`,
+      ability1description: `${
+        document.getElementById("ability1description").value
+      }`,
+      ability2name: `${document.getElementById("ability2name").value}`,
+      ability2description: `${
+        document.getElementById("ability2description").value
+      }`,
 
-      grenadeName: `${document.getElementById("grenadeName").value}`,
-      grenadeDes: `${document.getElementById("grenadeDes").value}`,
-      ultName: `${document.getElementById("ultName").value}`,
-      ultName: `${document.getElementById("ultDes").value}`,
+      grenade: `${document.getElementById("grenade").value}`,
+      grenadedescription: `${
+        document.getElementById("grenadedescription").value
+      }`,
+      ultimate: `${document.getElementById("ultimate").value}`,
+      ultimatedescription: `${
+        document.getElementById("ultimatedescription").value
+      }`,
     }),
     headers: {
       "Content-Type": "application/json",
