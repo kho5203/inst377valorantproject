@@ -33,3 +33,13 @@ async function createAgent() {
     },
   }).then((res) => res.json());
 }
+
+async function loadNewAgent() {
+  await fetch(`${host}/agents`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log("Data: ", data);
+    });
+}
+
+window.onload = loadNewAgent();
