@@ -2,6 +2,8 @@ const host = window.location.origin;
 
 async function createAgent() {
   console.log("Creating Agent");
+  // `${host}/agent`
+  // "http://localhost:3000/agent"
   await fetch(`${host}/agent`, {
     method: "POST",
     body: JSON.stringify({
@@ -32,14 +34,103 @@ async function createAgent() {
       "Content-Type": "application/json",
     },
   }).then((res) => res.json());
+
+  await loadNewAgent();
 }
 
 async function loadNewAgent() {
-  await fetch(`${host}/agents`)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log("Data: ", data);
-    });
+  // `${host}/agents`
+  // "http://localhost:3000/agents"
+  const response = await fetch(`${host}/agents`);
+  const data = await response.json();
+  console.log("Data: ", data);
+
+  const container = document.getElementById("createdAgents");
+
+  // Show agent details
+  container.innerHTML = `
+  <h2>Here are all of the Agents you created!</h2>
+   <img src="${data.agent_icon || ""}">
+   <h2>${data.agent_name}</h2>
+   <div class="swiper-container">
+       <div class="swiper-wrapper">
+           ${createAbilitySlides(data)}
+       </div>
+   </div>
+`;
+  // Initialize Swiper
+  new Swiper(".swiper-container", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      draggable: true,
+    },
+    freeMode: true,
+  });
 }
 
-window.onload = loadNewAgent();
+const currentAgents = [
+  "Brimstone",
+  "Viper",
+  "Omen",
+  "Killjoy",
+  "Cypher",
+  "Sova",
+  "Sage",
+  "Phoenix",
+  "Jett",
+  "Reyna",
+  "Raze",
+  "Breach",
+  "Skye",
+  "Yoru",
+  "Astra",
+  "KAY/O",
+  "Chamber",
+  "Neon",
+  "Fade",
+  "Harbor",
+  "Gekko",
+  "Deadlock",
+  "Clove",
+  "Iso",
+  "Vyse",
+];
+
+const newAgents = [];
+
+function createAbilitySlides(data) {
+  for (let i = 0; i < data.length; i++) {
+    if (!currentAgents.includes(data[i].agent_name)) {
+      newAgents.push(data[i]);
+    }
+  }
+  return newAgents
+    .map((ability) => {
+      return `
+                  <div class="swiper-slide">
+                      <img src="${ability.agent_icon || ""}" alt="${
+        ability.agent_name || "Unknown Ability"
+      }">
+                      <h2>${ability.agent_name || "Unknown Ability"}</h2>
+                      <p> Agent Role: ${ability.agent_role}</p>
+                      <p>Agent Description ${
+                        ability.agent_description || "No description available."
+                      }</p>
+                      <h3> Agent Abilities</h3>
+                      <h4> ${ability.ability_1_name}</h4>
+                      <p> ${ability.ability_1_description}</p>
+                      <h4> ${ability.ability_2_name}</h4>
+                      <p> ${ability.ability_2_description}</p>
+                      <h4> ${ability.grenade_name}</h4>
+                      <p> ${ability.grenade_description}</p>
+                      <h4> ${ability.ultimate_name}</h4>
+                      <p> ${ability.ultimate_description}</p>
+                  </div>
+              `;
+    })
+    .join("");
+}
+
+// window.onload = loadNewAgent();
