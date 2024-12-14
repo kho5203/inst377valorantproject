@@ -109,10 +109,8 @@ function createAbilitySlides(data) {
     .map((ability) => {
       return `
                   <div class="swiper-slide">
-                      <img src="${ability.agent_icon || ""}" alt="${
-        ability.agent_name || "Unknown Ability"
-      }">
-                      <h2>${ability.agent_name || "Unknown Ability"}</h2>
+                      <img src="${ability.agent_icon}>
+                      <h2>${ability.agent_name}</h2>
                       <p> <b>Agent Role:</b> ${ability.agent_role}</p>
                       <p> <b>Agent Description:</b> ${
                         ability.agent_description || "No description available."
