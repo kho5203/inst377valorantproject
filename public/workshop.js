@@ -17,7 +17,7 @@ async function createAgent() {
 
       grenadeName: `${document.getElementById("grenadeName").value}`,
       grenadeDes: `${document.getElementById("grenadeDes").value}`,
-      ultName: `${document.getElementById("ultDes").value}`,
+      ultName: `${document.getElementById("ultName").value}`,
       ultName: `${document.getElementById("ultDes").value}`,
     }),
     headers: {
