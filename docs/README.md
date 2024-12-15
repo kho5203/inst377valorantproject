@@ -6,7 +6,7 @@ Valorant Agent Hub is an interactive site for Valorant players to explore and st
 Users can see the stats and abilities of each agent, as well as explore our "Workshop" page to create your own agent!\
 By simply filling out the form, you too can make your dreams come to life with your very own Valorant agent!\
 Valorant Agent Hub is mainly targetted for **PC/laptop** browsers, similar to the game itself.\
-_For legal reasons, this website is not sponsored not affiliated by/with Riot Games. Creating your own character in the Workshop does NOT create a virtual character in the game._\
+_For legal reasons, this website is not sponsored not affiliated by/with Riot Games. Creating your own character in the Workshop does NOT create a virtual character in the game._
 
 Link to [Developer Manual](#developer-manual).
 
@@ -14,7 +14,7 @@ Link to [Developer Manual](#developer-manual).
 
 Welcome developers! Thank you for taking on this task. Here, you will find quite a lot of useful information to manage this site for users to enjoy!\
 The whole site uses HTMl, JavaScript, and CSS, so make sure you're studying those languages!\
-Prior to managing this site, you will need the following:\
+Prior to managing this site, you will need the following:
 
 ### APPLICATIONS AND TOOLS
 
@@ -31,10 +31,10 @@ Prior to managing this site, you will need the following:\
 To access [Supabase](https://supabase.com/), create an account and head to the [Dashboard](https://supabase.com/dashboard/projects). Create a new organization, create a new project for said organization, and head to **Table Editor** on the left. Create a new table and fill it out with columns that correspond with the Valorant API.\
 **SUPABASE (managing)**\
 Managing the Supabase database is very simple. Naming columns similar to the API makes your job easier. Any ID after 25 is an agent created by a user, as the first 25 are Valorant agents already in the game. Due to the ID being a primary key, there is no need to ID every single agent, as it will linearly increase in every iteration and creation.\
-The Supabase database is used to store rows of data regarding the current and newly created Valorant agents dedicated to the Workshop page. All inputs are sent to the database in real-time.\
+The Supabase database is used to store rows of data regarding the current and newly created Valorant agents dedicated to the Workshop page. All inputs are sent to the database in real time.
 
 **VERCEL**\
-Vercel was used to connect the GitHub repository with a live website. Vercel made it so that any pushes to the project were sent to the website automatically. This makes real-time updates more efficient.\
+Vercel was used to connect the GitHub repository with a live website. Vercel made it so that any pushes to the project were sent to the website automatically. This makes real-time updates more efficient.
 
 ### APIs USED
 
