@@ -96,9 +96,8 @@ const currentAgents = [
   "Vyse",
 ];
 
-const newAgents = [];
-
 function createAbilitySlides(data) {
+  const newAgents = [];
   for (let i = 0; i < data.length; i++) {
     if (!currentAgents.includes(data[i].agent_name)) {
       newAgents.push(data[i]);
@@ -108,21 +107,32 @@ function createAbilitySlides(data) {
   return newAgents
     .map((ability) => {
       return `
-                  <div class="swiper-slide">
-                      <img src="${ability.agent_icon}>
-                      <h2>${ability.agent_name}</h2>
-                      <p> <b>Agent Role:</b> ${ability.agent_role}</p>
-                      <p> <b>Agent Description:</b> ${ability.agent_description}</p>
-                      <h3> Agent Abilities</h3>
-                      <h4> ${ability.ability_1_name}</h4>
-                      <p> ${ability.ability_1_description}</p>
-                      <h4> ${ability.ability_2_name}</h4>
-                      <p> ${ability.ability_2_description}</p>
-                      <h4> ${ability.grenade_name}</h4>
-                      <p> ${ability.grenade_description}</p>
-                      <h4> ${ability.ultimate_name}</h4>
-                      <p> ${ability.ultimate_description}</p>
-                  </div>
+          <div class="swiper-slide">
+              <img src="${ability.agent_icon}" alt="${ability.agent_name}">
+              <h2>${ability.agent_name}</h2>
+              <p> <b>Agent Role:</b> ${ability.agent_role || "Unknown Role"}</p>
+              <p> <b>Agent Description:</b> ${
+                ability.agent_description || "No description available."
+              }</p>
+              <h3>Agent Abilities</h3>
+              <h4>${ability.ability_1_name || "Ability 1 Name Missing"}</h4>
+              <p>${
+                ability.ability_1_description || "Ability 1 Description Missing"
+              }</p>
+              <h4>${ability.ability_2_name || "Ability 2 Name Missing"}</h4>
+              <p>${
+                ability.ability_2_description || "Ability 2 Description Missing"
+              }</p>
+              <h4>${ability.grenade_name || "Grenade Name Missing"}</h4>
+              <p>${
+                ability.grenade_description || "Grenade Description Missing"
+              }</p>
+              <h4>${ability.ultimate_name || "Grenade Name Missing"}</h4>
+              <p>${
+                ability.ultimate_description || "Grenade Description Missing"
+              }</p>
+          </div>
+
               `;
     })
     .join("");
