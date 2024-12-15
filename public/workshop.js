@@ -56,15 +56,16 @@ async function loadNewAgent() {
        </div>
    </div>
 `;
-  // Initialize Swiper
   new Swiper(".swiper-container", {
     slidesPerView: "auto",
     spaceBetween: 10,
     scrollbar: {
       el: ".swiper-scrollbar",
-      draggable: true,
+      draggable: false,
     },
-    freeMode: true,
+    freeMode: false,
+    simulateTouch: false,
+    allowTouchMove: false,
   });
 }
 
