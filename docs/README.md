@@ -28,7 +28,8 @@ Prior to managing this site, you will need the following:
 ### HOW TO USE/INSTALL
 
 **SUPABASE (starting off)**\
-To access [Supabase](https://supabase.com/), create an account and head to the [Dashboard](https://supabase.com/dashboard/projects). Create a new organization, create a new project for said organization, and head to **Table Editor** on the left. Create a new table and fill it out with columns that correspond with the Valorant API.\
+To access [Supabase](https://supabase.com/), create an account and head to the [Dashboard](https://supabase.com/dashboard/projects). Create a new organization, create a new project for said organization, and head to **Table Editor** on the left. Create a new table and fill it out with columns that correspond with the Valorant API.
+
 **SUPABASE (managing)**\
 Managing the Supabase database is very simple. Naming columns similar to the API makes your job easier. Any ID after 25 is an agent created by a user, as the first 25 are Valorant agents already in the game. Due to the ID being a primary key, there is no need to ID every single agent, as it will linearly increase in every iteration and creation.\
 The Supabase database is used to store rows of data regarding the current and newly created Valorant agents dedicated to the Workshop page. All inputs are sent to the database in real time.
@@ -44,12 +45,12 @@ Youtube Data API v3 (in agents.html)
 ### KNOWN BUGS
 
 **MOBILE INCOMPATIBILITY**\
-Currently, the website is NOT mobile-compatible.\
+Currently, the website is NOT mobile-compatible.
 
 **WORKSHOP SUPABASE DISCONNECTION**\
 For some users using the Workshop section, the abilities, grenade, and ultimate names and descriptions are not sent to the Supabase database and are set to NULL. Clearing caches and using different accounts could mediate this issue, but does not fully solve it.\
 
-### ROAD-MAP FOR DEVELOPMENT\
+### ROAD-MAP FOR DEVELOPMENT
 *Disclaimer: Previous developments were made on a separate repository. A new repository was made to connect with Vercel. Because of this,
 some previous versions of our app are not seen in this repository. The previous repository can be seen here: https://github.com/gpasion/inst377finalproject*
 
