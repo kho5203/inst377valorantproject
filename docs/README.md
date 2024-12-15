@@ -56,7 +56,7 @@ some previous versions of our app are not seen in this repository. The previous 
 
 Version 1 (Front-End):
 - created bare-bones structure of the home, about, and agent page
-- 
+  
 Version 2 (Front-End):
 - got rid of a bug that was displaying Sova twice on the functions.html page
 Current issues with the agents.html page
@@ -85,6 +85,9 @@ Adding a statistics page
 - user-lookup stats
 - regional based leaderboards
 - agent pick rates/win rates/etc.
+
+Adding more inputs to the Workshop
+- MP3 inputs for voicelines
 
 ### MISC
 
