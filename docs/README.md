@@ -39,7 +39,7 @@ Youtube Data API v3 (in agents.html)
 
 ### KNOWN BUGS
 
-blah blah blah
+NOT MOBILE COMPATIBLE
 
 ### ROAD-MAP FOR DEVELOPMENT
 
