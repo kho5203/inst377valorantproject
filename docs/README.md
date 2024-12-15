@@ -48,7 +48,7 @@ Youtube Data API v3 (in agents.html)
 Currently, the website is NOT mobile-compatible.
 
 **WORKSHOP SUPABASE DISCONNECTION**\
-For some users using the Workshop section, the abilities, grenade, and ultimate names and descriptions are not sent to the Supabase database and are set to NULL. Clearing caches and using different accounts could mediate this issue, but does not fully solve it.\
+For some users using the Workshop section, the abilities, grenade, and ultimate names and descriptions are not sent to the Supabase database and are set to NULL. Clearing caches and using different accounts could mediate this issue, but does not fully solve it.
 
 ### ROAD-MAP FOR DEVELOPMENT
 *Disclaimer: Previous developments were made on a separate repository. A new repository was made to connect with Vercel. Because of this,
