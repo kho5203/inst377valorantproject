@@ -50,7 +50,6 @@ async function fetchAgentDetails(agentId) {
         // tutorial section
         const tutorialVideo = await fetchYouTubeTutorial(displayName);
 
-        // Tutorial Section (If video found)
         const tutorialSection = tutorialVideo ? `
             <div class="tutorial-section">
                 <h2 class="section-title">Agent Tutorial</h2>
@@ -63,7 +62,6 @@ async function fetchAgentDetails(agentId) {
             </div>
         ` : '';
 
-        // Combine Sections
         container.innerHTML = heroSection + abilitiesSection + tutorialSection;
 
 
@@ -79,7 +77,7 @@ async function fetchYouTubeTutorial(agentName) {
     try {
         const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(agentName + ' tutorial')}+valorant&key=${youtubeAPIKey}`);
         const data = await response.json();
-        const video = data.items[0]; // Get the first video
+        const video = data.items[0];
 
         if (video) {
             return { id: video.id.videoId, title: video.snippet.title };
