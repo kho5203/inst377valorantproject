@@ -139,4 +139,4 @@ function createAbilitySlides(data) {
     .join("");
 }
 
-// window.onload = loadNewAgent();
+window.onload = loadNewAgent();
