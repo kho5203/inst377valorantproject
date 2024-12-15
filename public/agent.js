@@ -1,6 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const agentId = urlParams.get('id');
 
+
 async function fetchAgentDetails(agentId) {
     const container = document.getElementById('agent-container');
     try {

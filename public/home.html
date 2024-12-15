@@ -1,94 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="home.css" />
-  </head>
 
-  <body onload="scrollToTop()">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body onload="initializePage()">
     <header>
-      <h1>Welcome to Valorant</h1>
-      <nav>
-        <a href="home.html">Home</a>
-        <a href="functions.html">Agents</a>
-        <a href="workshop.html">Workshop</a>
-        <a href="about.html">About</a>
-      </nav>
+        <h1>Welcome to Valorant</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="functions.html">Agents</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
 
     <section class="section-1" data-sr>
-      <div class="text-container">
-        <h2>Play Valorant</h2>
-        <p>
-          Valorant is a free-to-play 5v5 tactical shooter game developed by Riot
-          Games. Whether you're a seasoned FPS player or a newcomer, Valorant
-          provides thrilling and competitive gameplay.
-        </p>
-      </div>
-      <div class="image-container">
-        <a href="https://playvalorant.com" class="button" target="_blank"
-          >Download and Play Valorant</a
-        >
-      </div>
+        <div class="text-container">
+            <h2>Play Valorant</h2>
+            <p>Valorant is a free-to-play 5v5 tactical shooter game developed by Riot Games. Whether you're a seasoned
+                FPS player or a newcomer, Valorant provides thrilling and competitive gameplay.</p>
+        </div>
+        <div class="image-container">
+            <a href="https://playvalorant.com" class="button" target="_blank">Download and Play Valorant</a>
+        </div>
     </section>
 
     <section class="section-2" data-sr>
-      <div class="image-container">
-        <img src="image1.jpg" alt="Game Highlights" />
-      </div>
-      <div class="text-container">
-        <h2>Game Highlights</h2>
-        <ul>
-          <li>Unique Agents with distinct abilities</li>
-          <li>Strategic gameplay that rewards skill and teamwork</li>
-          <li>Competitive ranking system</li>
-          <li>Regular updates and events</li>
-        </ul>
-      </div>
+        <div class="image-container">
+            <img src="image1.jpg" alt="Game Highlights">
+        </div>
+        <div class="text-container">
+            <h2>Game Highlights</h2>
+            <ul>
+                <li>Unique Agents with distinct abilities</li>
+                <li>Strategic gameplay that rewards skill and teamwork</li>
+                <li>Competitive ranking system</li>
+                <li>Regular updates and events</li>
+            </ul>
+        </div>
     </section>
 
     <section class="section-3" data-sr>
-      <div class="text-container">
-        <h2>Why Valorant?</h2>
-        <p>
-          Valorant combines precision shooting with strategic team-based
-          gameplay. Each agent’s unique abilities allow players to create their
-          own playstyle and adapt to their team’s needs.
-        </p>
-      </div>
-      <div class="image-container">
-        <img src="image2.png" alt="Why Valorant" />
-      </div>
+        <div class="text-container">
+            <h2>Why Valorant?</h2>
+            <p>Valorant combines precision shooting with strategic team-based gameplay. Each agent’s unique abilities
+                allow players to create their own playstyle and adapt to their team’s needs.</p>
+        </div>
+        <div class="image-container">
+            <img src="image2.png" alt="Why Valorant">
+        </div>
     </section>
 
     <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
-    <script>
-      // ScrollReveal setup
-      const sr = ScrollReveal({
-        viewFactor: 0.5, // triggers reveal when 50% of the section is in view
-      });
+    <script src="home.js"></script>
+</body>
 
-      sr.reveal(".section-1", {
-        origin: "bottom",
-        distance: "1000px",
-        duration: 1000,
-      });
-      sr.reveal(".section-2", {
-        origin: "bottom",
-        distance: "1000px",
-        duration: 1000,
-      });
-      sr.reveal(".section-3", {
-        origin: "bottom",
-        distance: "1000px",
-        duration: 1000,
-      });
-
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    </script>
-  </body>
 </html>
