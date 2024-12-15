@@ -1,5 +1,5 @@
 const sr = ScrollReveal({
-    viewFactor: 0.3
+    viewFactor: .5
 });
 
 sr.reveal('.section-1', { origin: 'bottom', distance: '1000px', duration: 1000 });
