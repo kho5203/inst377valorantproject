@@ -140,3 +140,83 @@ input[type="submit"]:hover {
   text-align: center;
   font-size: 2em;
 }
+
+@media screen and (max-width: 768px) {
+  /* Header adjustments */
+  header h1 {
+    font-size: 1.8em;
+    padding: 0 10px;
+  }
+
+  /* Navigation adjustments */
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em;
+  }
+
+  nav a {
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.2em;
+  }
+
+  /* Form adjustments */
+  form {
+    margin: 1em;
+    padding: 1em;
+    width: auto;
+    max-width: 100%;
+  }
+
+  form h2 {
+    font-size: 1.5em;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input[type="text"],
+  input[type="submit"] {
+    width: 95%;
+    padding: 0.6em;
+    font-size: 0.9em;
+  }
+
+  /* Swiper slides adjustments */
+  .swiper-slide {
+    padding: 1em;
+    margin: 1em 0.5em;
+  }
+
+  .swiper-slide img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .swiper-slide h2 {
+    font-size: 1.4em;
+  }
+
+  .swiper-slide h3 {
+    font-size: 1.2em;
+  }
+
+  .swiper-slide h4 {
+    font-size: 1em;
+  }
+
+  .swiper-slide p {
+    font-size: 0.9em;
+  }
+
+  .exAgents h2,
+  .createdAgents h2 {
+    font-size: 1.6em;
+    padding: 0 10px;
+  }
+}

@@ -1,42 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    background-color: #1f1f1f;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #1f1f1f;
 }
 header {
-    background-color: #202020;
-    padding: 1em;
-    text-align: center;
+  background-color: #202020;
+  padding: 1em;
+  text-align: center;
 }
 header h1 {
-    color: #ff4655;
+  color: #ff4655;
 }
 nav {
-    text-align: center;
-    margin-top: 1em;
+  text-align: center;
+  margin-top: 1em;
 }
 nav a {
-    margin: 0 1em;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2em; /* Increased text size */
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s;
+  margin: 0 1em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em; /* Increased text size */
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 nav a:hover {
-    border-color: #ff4655;
+  border-color: #ff4655;
 }
 .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 2em;
-    background: #292929;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: auto;
+  padding: 2em;
+  background: #292929;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 .container h2 {
-    color: #ff4655;
+  color: #ff4655;
+}
+
+@media screen and (max-width: 768px) {
+  /* Header adjustments */
+  header h1 {
+    font-size: 1.8em;
+    padding: 0 10px;
+  }
+
+  /* Navigation adjustments to match workshop page */
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em;
+  }
+
+  nav a {
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.2em;
+    border-bottom: none;
+  }
+
+  nav a:hover {
+    background-color: #ff4655;
+    border-color: transparent;
+  }
+
+  /* Container adjustments */
+  .container {
+    margin: 1em;
+    padding: 1em;
+    width: auto;
+    max-width: 100%;
+    border-radius: 4px;
+  }
+
+  .container h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+  }
 }

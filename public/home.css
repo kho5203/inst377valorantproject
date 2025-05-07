@@ -1,270 +1,335 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #202020;
-    padding: 1em;
-    text-align: center;
+  background-color: #202020;
+  padding: 1em;
+  text-align: center;
 }
 
 header h1 {
-    color: #ff4655;
+  color: #ff4655;
 }
 
 nav {
-    text-align: center;
-    margin-top: 1em;
+  text-align: center;
+  margin-top: 1em;
 }
 
 nav a {
-    margin: 0 1em;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2em;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s;
+  margin: 0 1em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 
 nav a:hover {
-    border-color: #ff4655;
+  border-color: #ff4655;
 }
 
 section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3em 2em;
-    min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em 2em;
+  min-height: 450px;
 }
 
 .section-1 {
-    background-color: #ff4655;
-    color: #fff;
+  background-color: #ff4655;
+  color: #fff;
 }
 
 .section-2 {
-    background-color: #fff;
-    color: #1f1f1f;
+  background-color: #fff;
+  color: #1f1f1f;
 }
 
 .section-2 .text-container {
-    flex: 1;
-    padding: 0 2em;
+  flex: 1;
+  padding: 0 2em;
 }
 
 .section-2 .text-container h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .section-2 .text-container p {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .section-2 ul {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .section-2 ul li {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .section-3 {
-    background-color: #1f1f1f;
-    color: #fff;
+  background-color: #1f1f1f;
+  color: #fff;
 }
 
 .text-container {
-    flex: 1;
-    padding: 0 2em;
+  flex: 1;
+  padding: 0 2em;
 }
 
 .text-container h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .text-container p {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 8px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .workshop {
-    color: #ff4655;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s;
+  color: #ff4655;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 
 .workshop:hover {
-    border-color: #ff4655;
+  border-color: #ff4655;
 }
 
 .image-container {
-    font-family: Arial, sans-serif;
-    flex: 1;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  font-family: Arial, sans-serif;
+  flex: 1;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .btn-slice {
-    padding: 2rem 3.5rem;
-    border: 2px solid #1f1f1f;
-    border-radius: 0rem;
-    color: #1f1f1f;
-    font-size: 0.6875rem;
-    font-weight: bold;
-    letter-spacing: 0.3rem;
-    position: relative;
-    background-color: #fff;
+  padding: 2rem 3.5rem;
+  border: 2px solid #1f1f1f;
+  border-radius: 0rem;
+  color: #1f1f1f;
+  font-size: 0.6875rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  position: relative;
+  background-color: #fff;
 
-    -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1);
-    /* older webkit */
-    -webkit-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    /* custom */
+  -webkit-transition: all 1000ms cubic-bezier(0.89, 0, 0.14, 1);
+  /* older webkit */
+  -webkit-transition: all 1000ms cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  -moz-transition: all 1000ms cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  -o-transition: all 1000ms cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  transition: all 1000ms cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  /* custom */
 
-    -webkit-transition-timing-function: cubic-bezier(0.890, 0, 0.140, 1);
-    /* older webkit */
-    -webkit-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    /* custom */
+  -webkit-transition-timing-function: cubic-bezier(0.89, 0, 0.14, 1);
+  /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  -moz-transition-timing-function: cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  -o-transition-timing-function: cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  transition-timing-function: cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  /* custom */
 }
 
 .btn-slice .top {
-    position: relative;
-    height: 6.5px;
-    overflow: hidden;
-    top: 0;
-    -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1);
-    /* older webkit */
-    -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    /* custom */
+  position: relative;
+  height: 6.5px;
+  overflow: hidden;
+  top: 0;
+  -webkit-transition: all 300ms cubic-bezier(1, 0, 0.025, 1);
+  /* older webkit */
+  -webkit-transition: all 300ms cubic-bezier(1, -0.055, 0.025, 1.04);
+  -moz-transition: all 300ms cubic-bezier(1, -0.055, 0.025, 1.04);
+  -o-transition: all 300ms cubic-bezier(1, -0.055, 0.025, 1.04);
+  transition: all 300ms cubic-bezier(1, -0.055, 0.025, 1.04);
+  /* custom */
 
-    -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1);
-    /* older webkit */
-    -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    /* custom */
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0.025, 1);
+  /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(1, -0.055, 0.025, 1.04);
+  -moz-transition-timing-function: cubic-bezier(1, -0.055, 0.025, 1.04);
+  -o-transition-timing-function: cubic-bezier(1, -0.055, 0.025, 1.04);
+  transition-timing-function: cubic-bezier(1, -0.055, 0.025, 1.04);
+  /* custom */
 
-    -webkit-transition-delay: 0.35s;
-    -moz-transition-delay: 0.35s;
-    -ms-transition-delay: 0.35s;
-    -o-transition-delay: 0.35s;
-    transition-delay: 0.35s;
+  -webkit-transition-delay: 0.35s;
+  -moz-transition-delay: 0.35s;
+  -ms-transition-delay: 0.35s;
+  -o-transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
 
 .btn-slice .bottom {
-    position: relative;
-    height: 6.5px;
-    overflow: hidden;
-    bottom: 0;
-    -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1);
-    /* older webkit */
-    -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    /* custom */
+  position: relative;
+  height: 6.5px;
+  overflow: hidden;
+  bottom: 0;
+  -webkit-transition: all 300ms cubic-bezier(1, 0, 0.025, 1);
+  /* older webkit */
+  -webkit-transition: all 300ms cubic-bezier(1, -0.055, 0.025, 1.04);
+  -moz-transition: all 300ms cubic-bezier(1, -0.055, 0.025, 1.04);
+  -o-transition: all 300ms cubic-bezier(1, -0.055, 0.025, 1.04);
+  transition: all 300ms cubic-bezier(1, -0.055, 0.025, 1.04);
+  /* custom */
 
-    -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1);
-    /* older webkit */
-    -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040);
-    /* custom */
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0.025, 1);
+  /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(1, -0.055, 0.025, 1.04);
+  -moz-transition-timing-function: cubic-bezier(1, -0.055, 0.025, 1.04);
+  -o-transition-timing-function: cubic-bezier(1, -0.055, 0.025, 1.04);
+  transition-timing-function: cubic-bezier(1, -0.055, 0.025, 1.04);
+  /* custom */
 
-    -webkit-transition-delay: 0.35s;
-    -moz-transition-delay: 0.35s;
-    -ms-transition-delay: 0.35s;
-    -o-transition-delay: 0.35s;
-    transition-delay: 0.35s;
+  -webkit-transition-delay: 0.35s;
+  -moz-transition-delay: 0.35s;
+  -ms-transition-delay: 0.35s;
+  -o-transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
 
 .btn-slice .bottom span {
-    top: -6px;
-    position: absolute;
-    left: 0;
+  top: -6px;
+  position: absolute;
+  left: 0;
 }
 
 .btn-slice:hover .top {
-    top: -5px;
-    -webkit-transition-delay: 0.35s;
-    -moz-transition-delay: 0.35s;
-    -ms-transition-delay: 0.35s;
-    -o-transition-delay: 0.35s;
-    transition-delay: 0.35s;
+  top: -5px;
+  -webkit-transition-delay: 0.35s;
+  -moz-transition-delay: 0.35s;
+  -ms-transition-delay: 0.35s;
+  -o-transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
 
 .btn-slice:hover .bottom {
-    bottom: -5px;
-    -webkit-transition-delay: 0.35s;
-    -moz-transition-delay: 0.35s;
-    -ms-transition-delay: 0.35s;
-    -o-transition-delay: 0.35s;
-    transition-delay: 0.35s;
+  bottom: -5px;
+  -webkit-transition-delay: 0.35s;
+  -moz-transition-delay: 0.35s;
+  -ms-transition-delay: 0.35s;
+  -o-transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
 
 .btn-slice:hover,
 .btn-slice:focus,
 .btn-slice:active {
-    margin-left: 10px;
-    background-color: #ff4655;
-    color: #fff;
+  margin-left: 10px;
+  background-color: #ff4655;
+  color: #fff;
 }
 
 .btn-slice:before {
-    content: '';
-    height: 1px;
-    width: 60px;
-    background-color: #1f1f1f;
-    position: absolute;
-    margin-top: 6px;
-    right: -35px;
+  content: "";
+  height: 1px;
+  width: 60px;
+  background-color: #1f1f1f;
+  position: absolute;
+  margin-top: 6px;
+  right: -35px;
 
-    -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1);
-    /* older webkit */
-    -webkit-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    /* custom */
+  -webkit-transition: all 1000ms cubic-bezier(0.89, 0, 0.14, 1);
+  /* older webkit */
+  -webkit-transition: all 1000ms cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  -moz-transition: all 1000ms cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  -o-transition: all 1000ms cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  transition: all 1000ms cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  /* custom */
 
-    -webkit-transition-timing-function: cubic-bezier(0.890, 0, 0.140, 1);
-    /* older webkit */
-    -webkit-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
-    /* custom */
+  -webkit-transition-timing-function: cubic-bezier(0.89, 0, 0.14, 1);
+  /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  -moz-transition-timing-function: cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  -o-transition-timing-function: cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  transition-timing-function: cubic-bezier(0.89, -0.17, 0.14, 1.225);
+  /* custom */
 }
 
 .btn-slice:hover:before {
-    width: 130%;
+  width: 130%;
+}
+
+@media screen and (max-width: 768px) {
+  /* Navigation adjustments */
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em;
+  }
+
+  nav a {
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.2em;
+  }
+
+  /* Section adjustments */
+  section {
+    flex-direction: column;
+    padding: 2em 1em;
+    min-height: auto;
+  }
+
+  .section-1,
+  .section-2,
+  .section-3 {
+    text-align: center;
+  }
+
+  .text-container {
+    padding: 1em;
+  }
+
+  .text-container h2 {
+    font-size: 1.5em;
+  }
+
+  .text-container p {
+    font-size: 1.1em;
+  }
+
+  /* Image container adjustments */
+  .image-container {
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Button adjustments */
+  .btn-slice {
+    padding: 1.5rem 2.5rem;
+    font-size: 0.6rem;
+    margin: 1em auto;
+  }
+
+  .btn-slice:before {
+    display: none;
+  }
 }
