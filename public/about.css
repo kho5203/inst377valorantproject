@@ -22,8 +22,7 @@ nav a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  font-size: 1.2em; /* Increased text size */
-  border-bottom: 2px solid transparent;
+  font-size: 1.2em;
   transition: border-color 0.3s;
 }
 nav a:hover {
@@ -67,7 +66,6 @@ nav a:hover {
 
   nav a:hover {
     background-color: #ff4655;
-    border-color: transparent;
   }
 
   /* Container adjustments */
